@@ -5,187 +5,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800&amp;subset=latin-ext" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" /> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css" />
     <title>Test</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header class="header" id="sec-header">
-        <nav class="header__nav">
-            <a href="#sec-header" class="navbar__link header__nav__logo"><img src="./img/logoB.svg" alt="Logo" width="300px"></a>
-            <a href="#sec-about" class="navbar__link">O nas</a>
-            <a href="#sec-home" class="navbar__link active">Realizacje</a>
-            <a href="#sec-contact" class="navbar__link">Kontakt</a>
+    <header>
+        <nav class="uk-navbar-container uk-navbar-transparent uk-visible@l uk-margin-small-bottom" uk-navbar>
+
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo uk-width-1-2" href="#"><img src="./img/gabmar_black.svg" alt="logo"></a>
+            </div>
+
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="#">O nas</a></li>
+                    <li><a href="#">Realizacje</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#" class="uk-icon-button" uk-icon="facebook"></a></li>
+                    <li><a href="#" class="uk-icon-button" uk-icon="whatsapp"></a></li>
+                    <li><a href="#" class="uk-icon-button" uk-icon="instagram"></a></li>
+                </ul>
+
+            </div>
         </nav>
-        <div class="header__hero">
-            <!-- <h1>Motywacja jest pierwszym <br> krokiem do <span>sukcesu</span></h1> -->
-            <h2>Firma handlowo - usługowa świadcząca usługi w Dębicy i okolicy. Deweloper zajmujący się budową domów jednorodzinnych wolnostojących. Zajmujemy się również budową domów jednorodzinnych na zlecenie inwestora z własnym materiałem do stanu surowego, deweloperskiego lub z wykończeniem pod klucz.</h2>
-            <!-- <div class="header__hero__socials">
-                <a href="#" class="socials__link"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="socials__link"><i class="fab fa-github-alt"></i></a>
-                <a href="#" class="socials__link"><i class="fab fa-linkedin-in"></i></a>
-            </div> -->
-        </div>
+
+        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent uk-margin uk-hidden@l uk-padding-large" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo uk-width-1-2" href="#"><img src="./img/gabmar_black.svg" alt="logo"></a>
+            </div>
+
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#" aria-label="Open Menu"></a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#">O nas</a></li>
+                        <li><a href="#">Realizacje</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li class="uk-iconnav uk-margin-small-top">
+                            <a href="#" class="uk-icon-button" uk-icon="facebook"></a>
+                            <a href="#" class="uk-icon-button uk-margin-small-left uk-margin-small-right" uk-icon="whatsapp"></a>
+                            <a href="#" class="uk-icon-button" uk-icon="instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main id="sec-main">
-        <section id="sec-about" class="about">
-            <h3 class="sec-title">O nas</h3>
-            <div class="box">
-                <h3 class="box__title">Budowa domów</h3>
-                <p class="box__text">Zgodnie z założeniami inwestora jesteśmy w stanie zbudować dom w stanie surowym, developerskim, a także kompleksowo wykończyć go <span>„pod klucz”</span>.</p>
+    <main>
+        <section class="uk-section" id="hero">
+            <div class="uk-container uk-container-xsmall">
+
+                <h1 class="uk-text-center">Firma Handlowo-Usługowa <br> <span class="fs-4r"><b>GABMAR</b></span></h1>
+
+                <p class="uk-text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio impedit harum iusto et itaque eius repellendus doloribus ratione vero quibusdam tempore consectetur dolorum, assumenda, laboriosam voluptate vel ipsum quia voluptatibus, accusantium omnis est rerum unde commodi tenetur? Consectetur voluptatem hic nostrum repellendus error eaque, totam vitae tenetur molestiae vero numquam.</p>
             </div>
-            <div class="box">
-                <h3 class="box__title">Usługi remontowe</h3>
-                <p class="box__text">Jako doświadczona firma remontowa dysponujemy niezbędną wiedzą i doświadczeniem, które stale uzupełniamy o znajomość najnowszych technologii i materiałów wykończeniowych. <span>Świadczymy kompleksowe usługi remontowe</span> – od prac instalatorskich, aż po prace wykończeniowe. Wykonujemy remonty mieszkań, domów i lokali usługowych, a także przestrzeni komercyjnych o zróżnicowanej powierzchni.</p>
-            </div>
-            <div class="box">
-                <h3 class="box__title">Solidne wykonanie</h3>
-                <p class="box__text">Gwarantujemy wysokiej jakości wykonawstwo, dążąc do tego by nasze usługi były na najwyższym poziomie. Współpracujemy z cenionymi w całej Polsce dostawcami materiałów budowlanych. Najwyższym celem jest dla nas zadowolenie klientów, dlatego dokładamy wszelkich starań by nasza prace wykonane były z należytą starannością.</p>
-            </div>
-            <div class="box">
-                <h3 class="box__title">Development</h3>
-                <p class="box__text">Personally, the importance does not lie in what religion you are; however, a lack of religion does seem to run parallel with depression. This is classified as spiritual illness, which will have a negative effect on you mentally, physically, or totally.
-                </p>
-            </div>
-            <!-- <div class="customers">
-                <a href="#" class="customers__link"><img src="img/Google.svg" class="customers__logo"></a>
-                <a href="#" class="customers__link"><img src="img/Airbnb.svg" class="customers__logo"></a>
-                <a href="#" class="customers__link"><img src="img/Dropbox.svg" class="customers__logo"></a>
-            </div> -->
         </section>
 
-        <section id="sec-home" class="works">
-            <h3 class="sec-title">Realizacje</h3>
-            <a href="#" class="card">
-                <img src="img/img1.jpg" class="card__img" />
-                <div class="card__overlay">
-                    <span class="card__category">LandingPage, Grid</span>
-                    <h3 class="card__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex voluptatem adipisci totam quibusdam explicabo porro necessitatibus eos nemo blanditiis? Vero, quidem eveniet voluptas cum recusandae ab? Numquam, quis hic!</h3>
-                </div>
-            </a>
-            <a href="#" class="card">
-                <img src="img/img2.jpg" class="card__img" />
-                <div class="card__overlay">
-                    <span class="card__category">LandingPage, Bootstrap4</span>
-                    <h3 class="card__title">TPROBUILD</h3>
-                </div>
-            </a>
-            <a href="#" class="card">
-                <img src="img/img3.jpg" class="card__img" />
-                <div class="card__overlay">
-                    <span class="card__category">Featured</span>
-                    <h3 class="card__title">How Great Is The Strength Of Your Belief</h3>
-                </div>
-            </a>
-            <a href="#" class="card">
-                <img src="img/img6.jpg" class="card__img" />
-                <div class="card__overlay">
-                    <span class="card__category">Featured</span>
-                    <h3 class="card__title">Motivation Is The First Step To</h3>
-                </div>
-            </a>
-            <a href="#" class="card">
-                <img src="img/img5.jpg" class="card__img" />
-                <div class="card__overlay">
-                    <span class="card__category">Featured</span>
-                    <h3 class="card__title">Increasing Prosperity With Positive Thinking</h3>
-                </div>
-            </a>
-            <a href="#" class="card">
-                <img src="img/img4.jpg" class="card__img" />
-                <div class="card__overlay">
-                    <span class="card__category">Featured</span>
-                    <h3 class="card__title">Benjamin Franklin S Method Of Habit Formation</h3>
-                </div>
-            </a>
-        </section>
+        <section class="uk-section uk-section-small" id="onas">
+            <div class="uk-container">
 
-        <section id="sec-contact" class="contact">
-            <h3 class="sec-title">Kontakt</h3>
-            <div class="box">
-                <h2 class="box__title"><a href="mail@mail.com"><i class="fas fa-envelope"></i> mail@mail.com</a> | <span><i class="fas fa-phone-square-alt"></i> +48 507 146 206</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint perferendis, cumque officia laborum consectetur, obcaecati enim quas hic, expedita totam dolore impedit necessitatibus earum ullam neque atque nemo veniam dolores!</p>
-                <div class="contact__adres">
-                    <p class="contact__text"><i class="fas fa-map-marker-alt"></i> <b>Adres</b></p>
-                    <p class="no__margin">Świętosława 191a</p>
-                    <p class="no__margin">39-200 Dębica</p>
-                    <p class="no__margin">Polska</p>
-                </div>
-                <div class="contact__godziny">
-                    <p class="contact__text"><i class="fas fa-clock"></i> <b>Godziny otwarcia</b></p>
-                    <p class="no__margin">pon.: 08:00–17:00</p>
-                    <p class="no__margin">wt.: 08:00–17:00</p>
-                    <p class="no__margin">śr.: 08:00–17:00</p>
-                    <p class="no__margin">czw.: 08:00–17:00</p>
-                    <p class="no__margin">pt.: 08:00–17:00</p>
-                    <p class="no__margin">sob.: Zamknięte</p>
-                    <p class="no__margin">niedz.: Zamknięte</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="mapouter">
-                    <div class="gmap_canvas"><iframe width="700" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=%C5%9Awi%C4%99tos%C5%82awa%20191a%20D%C4%99bica&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br>
-                        <style>
-                            .mapouter {
-                                position: relative;
-                                text-align: right;
-                                height: 400px;
-                                width: 700px;
-                            }
-                        </style><a href="https://www.embedgooglemap.net"></a>
-                        <style>
-                            .gmap_canvas {
-                                overflow: hidden;
-                                background: none !important;
-                                height: 400px;
-                                width: 700px;
-                            }
-                        </style>
+                <h1 class="uk-margin-remove-bottom uk-text-uppercase uk-text-bold">O nas</h1>
+                <hr class="uk-divider-bold uk-margin-medium-bottom">
+
+                <div class="uk-column-1-2">
+
+                    <img src="https://images.pexels.com/photos/4792479/pexels-photo-4792479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
+
+                    <p class="uk-text-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+
+                    <p class="uk-text-meta">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p class="uk-text-meta">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+
+                    <div class="uk-column-1-2 uk-margin-medium-top">
+                        <h3 class="uk-text-center uk-text-large uk-text-bold">
+                            <span uk-icon="icon: receiver; ratio: 2"></span> +48 507 146 206
+                        </h3>
+
+                        <a href="mailto:mail@mail.net" class="uk-text-center uk-text-large uk-text-bold">
+                            <span uk-icon="icon: mail; ratio: 2"></span> mail@mail.net
+                        </a>
                     </div>
                 </div>
+
+                <div class="uk-column-1-4 uk-margin-medium-top">
+                    <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                        <div class="uk-card-header uk-padding-remove uk-margin-small-bottom uk-card-header-no-border">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="./img/architect.png" alt="Avatar">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h5 class="uk-margin-remove-bottom">Budowa domów</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body uk-padding-remove uk-text-meta uk-text-justify">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                        <div class="uk-card-header uk-padding-remove uk-margin-small-bottom uk-card-header-no-border">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="./img/renovation.png" alt="Avatar">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h5 class="uk-margin-remove-bottom">Usługi remontowe</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body uk-padding-remove uk-text-meta uk-text-justify">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                        <div class="uk-card-header uk-padding-remove uk-margin-small-bottom uk-card-header-no-border">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="./img/solid.png" alt="Avatar">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h5 class="uk-margin-remove-bottom">Solidne wykonanie</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body uk-padding-remove uk-text-meta uk-text-justify">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+
+                    <div class="uk-card uk-card-hover uk-card-default uk-card-body">
+                        <div class="uk-card-header uk-padding-remove uk-margin-small-bottom uk-card-header-no-border">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="./img/money-bag.png" alt="Avatar">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h5 class="uk-margin-remove-bottom">Konkurencyjne ceny</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body uk-padding-remove uk-text-meta uk-text-justify">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </section>
     </main>
 
-    <footer>
-        <p class="footer__copyright">Copyright © 2022 marcinbarszcz</p>
-        <button onclick="scrollToTop()" class="toTop" id="toTop"><i class="fas fa-chevron-up"></i></button>
-    </footer>
+    <footer></footer>
 
-    <!-- js & jq -->
-    <script>
-        const button = document.querySelector('.toTop');
-
-        const displayButton = () => {
-            window.addEventListener('scroll', () => {
-                console.log(window.scrollY);
-
-                if (window.scrollY > 100) {
-                    button.style.display = "block";
-                } else {
-                    button.style.display = "none";
-                }
-            });
-        };
-
-        const scrollToTop = () => {
-            button.addEventListener("click", () => {
-                window.scroll({
-                    top: 0,
-                    left: 0,
-                    behavior: 'smooth'
-                });
-                console.log(event);
-            });
-        };
-
-        displayButton();
-        scrollToTop();
-    </script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit-icons.min.js"></script>
 </body>
 
 </html>
