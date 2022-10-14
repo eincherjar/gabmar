@@ -32,6 +32,17 @@ a {
   min-height: auto;
 }
 
+.uk-logo,
+.uk-navbar-nav > li > a {
+  transition: all 0.3s ease-in-out;
+}
+
+.uk-logo:hover,
+.uk-navbar-nav > li > a:hover {
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+
 #hero {
   min-height: 90vh;
   display: flex;
@@ -68,6 +79,14 @@ a {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.bg-special {
+  background-color: #e63946;
+}
+
+.txt-white {
+  color: #ffffff;
+}
+
 .button-primary {
   background-color: #e63946;
   color: #ffffff;
@@ -81,7 +100,38 @@ a {
   transition: all 0.5s ease;
 }
 
-#projects img {
+#projekty img {
   height: 250px;
   object-fit: cover;
+}
+
+footer a {
+  color: #4361ee;
+}
+
+footer a:hover {
+  color: #e63946;
+  text-decoration: none;
+}
+
+.toTop {
+  display: none;
+  border: 0;
+  width: 52px;
+  height: 52px;
+  background: #e63946;
+  color: #fff;
+  border-radius: 25px;
+  /* transform: rotate(45deg); */
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+}
+
+.toTop:hover {
+  transform: rotate(360deg);
 }
