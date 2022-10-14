@@ -1,19 +1,17 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  padding: 1%;
-  max-width: 1680px;
   margin: 0 auto;
 }
 
 * {
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 a {
@@ -64,4 +62,26 @@ a {
 
 .uk-card-header-no-border {
   border-bottom: 0 !important;
+}
+
+.box-shadow-0 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button-primary {
+  background-color: #e63946;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.5s ease;
+}
+
+.button-primary:hover {
+  background-color: #ffffff;
+  color: #e63946;
+  transition: all 0.5s ease;
+}
+
+#projects img {
+  height: 250px;
+  object-fit: cover;
 }
